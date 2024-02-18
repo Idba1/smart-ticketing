@@ -10,9 +10,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="mx-auto container">
     <header>
-        <nav class="mx-auto">
+        <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
@@ -26,8 +26,8 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn text-[#1DD100] bg-[#1DD1001A] border-solid text-lg font-bold">Bus <img src="images/bus-icon.png"
-                            alt=""></a>
+                    <a class="btn text-[#1DD100] bg-[#1DD1001A] border-solid text-lg font-bold">Bus <img
+                            src="images/bus-icon.png" alt=""></a>
                 </div>
             </div>
         </nav>
@@ -40,16 +40,67 @@
                     </span>
                 </h1>
                 <p class="text-base text-white mt-5 font-normal	">
-                    Yes, you can run unit tests and view the results directly within the app. <br>The integrated testing features allow for a streamlined .
+                    Yes, you can run unit tests and view the results directly within the app. <br>The integrated testing
+                    features allow for a streamlined .
                 </p>
                 <button class="btn btn-success m-10 bg-[#1DD100] font-bold">Buy Tickets</button>
             </div>
         </section>
-
     </header>
-    <main>
 
+    <main>
+        <section class="best-offer-section container">
+            <div>
+                <div id="cupon15" class="flex justify-evenly mt-20">
+                    <div id="content" class="bg-[#FFBF0F] h-52 w-1/3 rounded-3xl flex px-6 text-center items-center">
+                        <div>
+                            <h1 class="text-4xl font-black text-black">
+                                15% OFF
+                            </h1>
+                            <p class="font-semibold text-xl text-black">
+                                on your next purchase
+                            </p>
+                            <p class="text-lg font-medium">
+                                use by January 2024
+                            </p>
+                        </div>
+                        <img src="images/cupon-devider.png" alt="">
+                        <div>
+                            <h1 class="text-3xl font-bold text-black">
+                                NEW
+                            </h1>
+                            <p class="text-lg font-medium">
+                                Coupon Code
+                            </p>
+                        </div>
+                    </div>
+                    <div id="cupon-code" class="bg-[#F78C9C] h-52 w-1/3 rounded-3xl flex px-6 text-center items-center">
+                        <div>
+                            <h1 class="text-4xl font-black text-black">
+                                20% OFF
+                            </h1>
+                            <p class="font-semibold text-xl text-black">
+                                on your next purchase
+                            </p>
+                            <p class="text-lg font-medium">
+                                use by January 2024
+                            </p>
+                        </div>
+                        <img src="images/cupon-devider.png" alt="">
+                        <div>
+                            <h1 class="text-3xl font-bold text-black">
+                                Couple 20
+                            </h1>
+                            <p class="text-lg font-medium">
+                                Coupon Code
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
 
     </footer>
