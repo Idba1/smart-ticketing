@@ -220,42 +220,44 @@
                             <img src="images/tabler-icon-steering-wheel.svg" alt="">
                         </button>
                     </div>
+                    <!-- seat started -->
                     <div class="flex justify-between mt-5">
                         <div class="space-x-8">
-                            <button class="btn border-none btn-outline bg-[#0307121A]">
+                            <button id="seata1" onclick="setBackgroundColorById()" class="btn border-none btn-outline bg-[#0307121A] seat-btn">
                                 A1
                             </button>
-                            <button class="btn border-none btn-outline bg-[#0307121A]">
+                            <button id="A1" class="btn border-none btn-outline bg-[#0307121A] seat-btn">
                                 A2
                             </button>
                         </div>
                         <div class="space-x-8">
-                            <button class="btn border-none btn-outline bg-[#0307121A]">
+                            <button class="btn border-none btn-outline bg-[#0307121A] seat-btn">
                                 A3
                             </button>
-                            <button class="btn border-none btn-outline bg-[#0307121A]">
+                            <button class="btn border-none btn-outline bg-[#0307121A] seat-btn">
                                 A4
                             </button>
                         </div>
                     </div>
                     <div class="flex justify-between mt-5">
                         <div class="space-x-8">
-                            <button class="btn border-none sbtn-outline bg-[#0307121A]">
+                            <button class="btn border-none sbtn-outline bg-[#0307121A] seat-btn">
                                 B1
                             </button>
-                            <button class="btn border-none btn-outline bg-[#0307121A]">
+                            <button class="btn border-none btn-outline bg-[#0307121A] seat-btn">
                                 B2
                             </button>
                         </div>
                         <div class="space-x-8">
-                            <button class="btn border-none btn-outline bg-[#0307121A]">
+                            <button class="btn border-none btn-outline bg-[#0307121A] seat-btn">
                                 B3
                             </button>
-                            <button class="btn btn-outline bg-[#0307121A] border-none">
+                            <button class="btn btn-outline bg-[#0307121A] border-none seat-btn">
                                 B4
                             </button>
                         </div>
                     </div>
+                    <!-- seat end -->
                 </div>
                 <div>
                     <div>
@@ -267,7 +269,7 @@
                         <div class="flex  justify-between">
                             <p class="font-medium text-black">
                                 Seat
-                                <span class="bg-[#1DD100] rounded-full px-3">
+                                <span id="selected-seat" class="bg-[#1DD100] rounded-full px-3">
                                     0
                                 </span>
                             </p>
@@ -338,6 +340,7 @@
         </footer>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/utility.js"></script>
 </body>
 
 </html>
