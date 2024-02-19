@@ -1,10 +1,3 @@
-/* function setBackgroundColorById(elementId){
-    const element = document.getElementById(elementId);
-    element.classList.remove('bg-[#0307121A]');
-    element.classList.add('bg-[#1DD100]');
-} */
-
-
 function setInnerText(id, value){
     document.getElementById(id).innerText = value;
 }
@@ -20,3 +13,19 @@ for (const seat of allSeat){
     })
 }
 
+
+
+
+function resetSeatText(id, value){
+    document.getElementById(id).innerText = value;
+}
+
+const resetSeat = document.getElementsByClassName('seat-btn');
+let available = 8;
+
+for (const seat of resetSeat){
+    seat.addEventListener('click', function(e){
+        available = available-1;
+        document.getElementById('available').innerText = available;
+    })
+}
